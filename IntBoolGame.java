@@ -11,7 +11,6 @@ public class IntBoolGame {
         // Time limit in milliseconds (e.g., 1 minute per set)
         final long TIME_LIMIT = 1 * 60 * 1000;
 
-        System.out.println("Welcome to the Boolean Math Game!");
 
         // Loop for level-based gameplay
         while (continueGame) {
@@ -38,6 +37,7 @@ public class IntBoolGame {
 
     // Method to play LEVEL 1 with time limit
     public static int playLevel1(int number_of_questions, long timeLimit) {
+        TIME_LIMIT=3*60*1000;
         Scanner sc = new Scanner(System.in);
         Random rn = new Random();
         int score = 0;
@@ -92,6 +92,7 @@ public class IntBoolGame {
 
     // Method to play LEVEL 2 with time limit
     public static int playLevel2(int number_of_questions,long timeLimit) {
+        TIME_LIMIT=5*60*1000;
         Scanner sc = new Scanner(System.in);
         Random rn = new Random();
         int score = 0;
