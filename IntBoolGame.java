@@ -8,24 +8,19 @@ public class IntBoolGame {
         int score = 0;
         boolean continueGame = true;
 
-        // Time limit in milliseconds (e.g., 1 minute per set)
         final long TIME_LIMIT = 1 * 60 * 1000;
 
 
-        // Loop for level-based gameplay
         while (continueGame) {
-            // Play LEVEL 1 until score is 3 or more
-            if (score < 3) {
+            if (score < 5) {
                 System.out.println("\nLEVEL 1: Answer the questions.");
                 score = playLevel1(number_of_questions, TIME_LIMIT);
             }
-            // If the player scores 3 or more, move to LEVEL 2
-            if (score >= 3) {
+            if (score >= 5) {
                 System.out.println("\nCongratulations! You've reached LEVEL 2.");
                 score = playLevel2(number_of_questions, TIME_LIMIT);
             }
 
-            // Ask the player if they want to continue or exit
             System.out.print("\nDo you want to continue playing? (yes/no): ");
             String response = sc.next().trim().toLowerCase();
             continueGame = response.equals("yes");
@@ -35,7 +30,6 @@ public class IntBoolGame {
         sc.close();
     }
 
-    // Method to play LEVEL 1 with time limit
     public static int playLevel1(int number_of_questions, long timeLimit) {
         TIME_LIMIT=3*60*1000;
         Scanner sc = new Scanner(System.in);
@@ -90,7 +84,6 @@ public class IntBoolGame {
         return score;
     }
 
-    // Method to play LEVEL 2 with time limit
     public static int playLevel2(int number_of_questions,long timeLimit) {
         TIME_LIMIT=5*60*1000;
         Scanner sc = new Scanner(System.in);
