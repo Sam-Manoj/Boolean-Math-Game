@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
+           fx:controller="com.example.javaminiproject.GameMenuController" fx:id="stackPane">
+
+    <ImageView fx:id="backgroundImageView" pickOnBounds="true" preserveRatio="true ">
+        <image>
+            <Image url="@menu.png"/> <!-- Replace with your background image path -->
+        </image>
+    </ImageView>
+
+    <GridPane alignment="center" hgap="20" vgap="20" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <!-- Button with ImageView (About) -->
+        <Button fx:id="button1" onAction="#aboutclick" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <graphic>
+                <ImageView fitHeight="218.0" fitWidth="205.0" preserveRatio="true">
+                    <image>
+                        <Image url="@About.png"/> <!-- Replace with your button image path -->
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button fx:id="button2" onAction="#setclick" GridPane.columnIndex="7" GridPane.rowIndex="4">
+            <graphic>
+                <ImageView fitHeight="204.0" fitWidth="215.0" preserveRatio="true">
+                    <image>
+                        <Image url="@set.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button fx:id="button3" onAction="#hiclick" GridPane.columnIndex="7" GridPane.rowIndex="1">
+            <graphic>
+                <ImageView fitHeight="204.0" fitWidth="204.0" preserveRatio="true">
+                    <image>
+                        <Image url="@hs.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button fx:id="button4" onAction="#playclick" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <graphic>
+                <ImageView fitHeight="204.0" fitWidth="204.0" preserveRatio="true">
+                    <image>
+                        <Image url="@Start.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+</StackPane>

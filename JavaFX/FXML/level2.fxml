@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaminiproject.level2controller">
+    <ImageView fx:id="backgroundImageView" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@level2bg.png" />
+        </image>
+    </ImageView>
+
+    <VBox alignment="CENTER" spacing="20.0">
+        <!-- Header Label -->
+        <HBox alignment="CENTER" spacing="10.0" />
+
+        <!-- Question and Answer Section -->
+        <Label fx:id="questionLabel" style="-fx-font-size: 16; -fx-text-fill: white; -fx-font-family: 'Comic Sans'; -fx-font-weight: bold;" wrapText="true" />
+        <TextField fx:id="answerField" maxHeight="-Infinity" maxWidth="-Infinity">
+            <font>
+                <Font name="Comic Sans MS Bold" size="12.0" />
+            </font>
+        </TextField>
+        <Button fx:id="submitButton" onAction="#handleSubmit" text="Submit">
+            <font>
+                <Font name="Comic Sans MS Bold" size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Score Section (Centered to the left) -->
+        <HBox alignment="CENTER_LEFT" spacing="10.0" translateX="25.0">
+            <Label style="-fx-font-size: 60; -fx-text-fill: black; -fx-font-family: 'Comic Sans'; -fx-font-weight: bold;" text="Score: " />
+            <Label fx:id="scoreLabel" style="-fx-font-size: 60; -fx-text-fill: black; -fx-font-family: 'Comic Sans'; -fx-font-weight: bold;" text="0" />
+        </HBox>
+
+        <!-- Timer Section (Centered to the left) -->
+        <HBox alignment="CENTER_LEFT" spacing="10.0" translateX="25.0" >
+            <Label style="-fx-font-size: 40; -fx-text-fill: black; -fx-font-family: 'Comic Sans'; -fx-font-weight: bold;" text="Time Remaining: " />
+            <Label fx:id="timeLabel" style="-fx-font-size: 40; -fx-text-fill: black; -fx-font-family: 'Comic Sans'; -fx-font-weight: bold;" text="30" />
+        </HBox>
+
+    </VBox>
+
+    <Button fx:id="helloButton" alignment="CENTER_RIGHT" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#BackClick" prefHeight="50.0" prefWidth="150.0" translateX="313.0" translateY="187.0">
+        <graphic>
+            <ImageView>
+                <image>
+                    <Image url="@/com/example/javaminiproject/Back.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+</StackPane>
