@@ -1,4 +1,4 @@
-# Boolean Logic Quest
+# Boolean Logic Quest[LOGI PIXEL]
 
 ![Game Banner](https://github.com/Sam-Manoj/Boolean-Math-Game/raw/main/JAVA.png)
 
