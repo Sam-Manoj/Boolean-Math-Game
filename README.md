@@ -94,8 +94,6 @@ Each level presents questions involving Boolean operations like **AND, OR, and N
 
 ## How to Play
 
-![Game Banner](https://github.com/Sam-Manoj/Boolean-Math-Game/tree/main/JavaFX/FXML/images%20and%20video/setbg.png)
-
 1. **Start the Game** – Click on the **Start** button.
 2. **Answer Boolean Questions** – Solve Boolean logic expressions by entering the correct answers.
 3. **Keep an Eye on the Timer** – Complete all answers before the timer runs out.
