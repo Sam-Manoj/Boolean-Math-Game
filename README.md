@@ -1,6 +1,6 @@
 # Boolean Logic Quest
 
-![Game Banner](https://github.com/Sam-Manoj/Boolean-Math-Game/raw/main/Java Mini Project (1).png)
+![Game Banner](https://github.com/Sam-Manoj/Boolean-Math-Game/raw/main/JAVA.png)
 
 
 ## Introduction
